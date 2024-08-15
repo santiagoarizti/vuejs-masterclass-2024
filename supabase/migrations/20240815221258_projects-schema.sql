@@ -11,5 +11,3 @@ create table projects(
   status current_status default 'in-progress',
   collaborators text array default array[]::varchar[] not null
 );
-
--- insert into projects (name, slug) values ('project one', 'project-one');
