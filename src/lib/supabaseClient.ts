@@ -23,3 +23,5 @@ export const supabase = createClient(supabaseUrl, supabaseKey)
 // supabase init
 // supabase login
 // supabase link --project-ref aiwnawzxnopwwczbmfze
+
+// supabase migration new projects-schema
