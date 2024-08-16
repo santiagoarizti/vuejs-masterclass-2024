@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import type { Database } from '../../database/types'
 
 // VITE_ tells Vite to bump the variable to the frontend
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
@@ -12,7 +13,7 @@ if (!supabaseUrl) {
 }
 
 // Create a single supabase client for interacting with your database
-export const supabase = createClient(supabaseUrl, supabaseKey)
+export const supabase = createClient<Database>(supabaseUrl, supabaseKey)
 
 // supabase
 // db 8-Bi3P3PRm9kyzm
