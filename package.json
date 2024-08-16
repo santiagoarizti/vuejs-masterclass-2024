@@ -25,6 +25,7 @@
     "@vueuse/core": "^11.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "iconify-icon": "^2.1.0",
     "lucide-vue-next": "^0.428.0",
     "pinia": "^2.1.7",
     "radix-vue": "^1.9.4",
