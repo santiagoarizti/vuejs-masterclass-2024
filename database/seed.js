@@ -29,6 +29,8 @@ const logStep = (stepMessage) => {
 }
 
 const seedProjects = async (numEntries) => {
+  logStep('Seeding "projects"...')
+
   const projects = []
   for (let i = 0; i < numEntries; i++) {
     const name = faker.word.adjective() + ' ' + faker.word.noun()
@@ -40,7 +42,7 @@ const seedProjects = async (numEntries) => {
     })
   }
 
-  const { data, error } = await supabase.from('projects').insert(projects)
+  const { data, error } = await supabase.from('projects').insert(projects).select('id')
 
   if (error) return logErrorAndExit('projects', error)
 
@@ -49,8 +51,36 @@ const seedProjects = async (numEntries) => {
   return data
 }
 
+const seedTasks = async (numEntries, projectsIds) => {
+  logStep('Seedint "tasks"...')
+  const tasks = []
+
+  for (let i = 0; i < numEntries; i++) {
+    tasks.push({
+      name: faker.lorem.words(3),
+      status: faker.helpers.arrayElement(['in-progress', 'completed']),
+      description: faker.lorem.paragraph(),
+      due_date: faker.date.future(),
+      project_id: faker.helpers.arrayElement(projectsIds),
+      collaborators: faker.helpers.arrayElements([1, 2, 3])
+    })
+  }
+
+  const { data, error } = await supabase.from('tasks').insert(tasks).select('id')
+
+  if (error) return logErrorAndExit('tasks', error)
+
+  logStep('"tasks" seeded successfully.')
+
+  return data
+}
+
 const seedDatabase = async (numEntriesPerTable) => {
-  await seedProjects(numEntriesPerTable)
+  const projects = await seedProjects(numEntriesPerTable)
+  await seedTasks(
+    numEntriesPerTable,
+    projects.map((p) => p.id)
+  )
 }
 
 const numEntriesPerTable = 10
