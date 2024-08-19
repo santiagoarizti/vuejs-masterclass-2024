@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 import { defineConfig } from 'vite'
@@ -19,6 +20,7 @@ export default defineConfig({
   },
   plugins: [
     VueRouter(),
+    Components(),
     AutoImport({
       include: [
         /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx

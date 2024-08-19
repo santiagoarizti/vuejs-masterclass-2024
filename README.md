@@ -14,6 +14,7 @@ Tools learned here
 - [Iconify](https://icon-sets.iconify.design/lucide/)
 - [Tanstack](https://tanstack.com/)
 - [Unplugin Auto Import](https://unplugin.unjs.io/showcase/unplugin-auto-import.html)
+- [Unplugin Vue Components](https://unplugin.unjs.io/showcase/unplugin-vue-components.html)
 - (Vue use)
 
 Repo from VueSchool
