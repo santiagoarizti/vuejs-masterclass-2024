@@ -13,6 +13,7 @@ defineProps<{
 <template>
   <RouterLink
     v-for="link in links"
+    exact-active-class="text-primary bg-muted"
     :key="link.title"
     :to="link.to"
     class="flex items-center gap-3 px-4 py-2 mx-2 transition-colors rounded-lg hover:text-primary justify-center lg:justify-normal text-muted-foreground"
