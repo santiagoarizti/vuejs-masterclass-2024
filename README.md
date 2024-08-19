@@ -15,6 +15,7 @@ Tools learned here
 - [Tanstack](https://tanstack.com/)
 - [Unplugin Auto Import](https://unplugin.unjs.io/showcase/unplugin-auto-import.html)
 - [Unplugin Vue Components](https://unplugin.unjs.io/showcase/unplugin-vue-components.html)
+- [Pinia](https://pinia.vuejs.org/)
 - (Vue use)
 
 Repo from VueSchool
