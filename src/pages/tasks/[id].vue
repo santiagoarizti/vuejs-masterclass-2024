@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+  <h1>Task {{ $route.params?.id }}</h1>
 </template>
