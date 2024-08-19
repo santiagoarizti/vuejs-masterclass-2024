@@ -58,5 +58,5 @@ const columns: ColumnDef<Tables<'tasks'>>[] = [
 </script>
 
 <template>
-  <DataTable v-if="tasks" :columns="columns" :data="tasks" />
+  <DataTable v-if="tasks" :columns :data="tasks" />
 </template>
