@@ -8,11 +8,12 @@ Tools learned here
 - Prettier
 - [Supabase](https://supabase.com/dashboard/projects)
 - [Faker](https://fakerjs.dev/api/)
-- Unplugin Vue Router
+- [Unplugin Vue Router](https://uvr.esm.is/)
 - Tailwind
 - [Shad CN Vue](https://www.shadcn-vue.com/)
 - [Iconify](https://icon-sets.iconify.design/lucide/)
 - [Tanstack](https://tanstack.com/)
+- [Unplugin Auto Import](https://unplugin.unjs.io/showcase/unplugin-auto-import.html)
 - (Vue use)
 
 Repo from VueSchool
