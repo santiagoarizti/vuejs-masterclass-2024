@@ -6,7 +6,7 @@ Tools learned here
 - Vue
 - Eslint
 - Prettier
-- [Supabase](https://supabase.com/dashboard/projects)
+- [Supabase](https://supabase.com/dashboard/project/aiwnawzxnopwwczbmfze)
 - [Faker](https://fakerjs.dev/api/)
 - [Unplugin Vue Router](https://uvr.esm.is/)
 - Tailwind
